@@ -45,7 +45,7 @@ section.two h2{
     font-size: 30pt;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 100;
-    margin-top: 300px;
+    margin-top: 200px;
     color: #4e449a;
 }
 
@@ -66,4 +66,21 @@ footer{
     height: 400px;
     background: url('assets/FOOTER.png');
     background-size: cover;
+}
+
+@media (max-width: 900px){
+    main{
+        flex-direction: column;
+        height: auto;
+    }
+    section.one{
+        width: 100%;
+        margin: 0;
+    }
+    section.two{
+        width: 100%;
+    }
+    section.two h2{
+        margin-top: 50%;
+    }
 }
